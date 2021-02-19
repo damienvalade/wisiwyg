@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Demo wisiwyg</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item {% if app.request.pathinfo == path('form_trumbowyg') %}active{% endif %}">
+                <a class="nav-link" href="{{ path('form_trumbowyg') }}">Trumbowyg</a>
+            </li>
+            <li class="nav-item {% if app.request.pathinfo == path('form_summernote') %}active{% endif %}">
+                <a class="nav-link" href="{{ path('form_summernote') }}">Summernote</a>
+            </li>
+            <li class="nav-item {% if app.request.pathinfo == path('form_quill') %}active{% endif %}">
+                <a class="nav-link" href="{{ path('form_quill') }}">Quill</a>
+            </li>
+            <li class="nav-item {% if app.request.pathinfo == path('form_froala') %}active{% endif %}">
+                <a class="nav-link" href="{{ path('form_froala') }}">Froala</a>
+            </li>
+            <li class="nav-item {% if app.request.pathinfo == path('form_ckeditor') %}active{% endif %}">
+                <a class="nav-link" href="{{ path('form_ckeditor') }}">Ckeditor</a>
+            </li>
+            <li class="nav-item {% if app.request.pathinfo == path('form_tinymce') %}active{% endif %}">
+                <a class="nav-link" href="{{ path('form_tinymce') }}">TinyMCE</a>
+            </li>
+        </ul>
+    </div>
+</nav>
