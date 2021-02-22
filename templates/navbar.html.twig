@@ -21,6 +21,9 @@
             <li class="nav-item {% if app.request.pathinfo == path('form_ckeditor') %}active{% endif %}">
                 <a class="nav-link" href="{{ path('form_ckeditor') }}">Ckeditor</a>
             </li>
+            <li class="nav-item {% if app.request.pathinfo == path('form_ckeditorv5') %}active{% endif %}">
+                <a class="nav-link" href="{{ path('form_ckeditorv5') }}">Ckeditorv5</a>
+            </li>
             <li class="nav-item {% if app.request.pathinfo == path('form_tinymce') %}active{% endif %}">
                 <a class="nav-link" href="{{ path('form_tinymce') }}">TinyMCE</a>
             </li>

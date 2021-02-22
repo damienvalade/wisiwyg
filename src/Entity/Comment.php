@@ -10,6 +10,25 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Comment
 {
+    public const WISIWYG_QUILL = 'Quill';
+    public const WISIWYG_TRUMBOWYG = 'Trumbowyg';
+    public const WISIWYG_SUMMERNOTE = 'Summernote';
+    public const WISIWYG_TINYMCE = 'TinyMCE';
+    public const WISIWYG_FROALA = 'Froala';
+    public const WISIWYG_CKEDITOR = 'CKEditor';
+    public const WISIWYG_CKEDITORV5 = 'CKEditor v5';
+
+    public const PODCAST_STATUSES = [
+        self::WISIWYG_QUILL,
+        self::WISIWYG_TRUMBOWYG,
+        self::WISIWYG_SUMMERNOTE,
+        self::WISIWYG_TINYMCE,
+        self::WISIWYG_FROALA,
+        self::WISIWYG_CKEDITOR,
+        self::WISIWYG_CKEDITORV5,
+    ];
+
+
     /**
      * @ORM\Id
      * @ORM\GeneratedValue

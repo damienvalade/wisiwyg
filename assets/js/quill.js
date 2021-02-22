@@ -47,7 +47,9 @@ $('.target_quill').each(function(i, el) {
         theme: 'snow'
     });
 
+    var textareaId = this.id;
+
     quill.on('text-change', function() {
-        el.html(quill.getContents());
+        $("#"+textareaId).val(quill.root.innerHTML.replace(/"/g, '\''));
     });
 });

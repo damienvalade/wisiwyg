@@ -6,7 +6,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\FormBuilderInterface;
 
-class TinymceType extends AbstractType
+class Ckeditorv5Type extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
@@ -14,7 +14,7 @@ class TinymceType extends AbstractType
             ->add('content', TextareaType::class, [
                 'required' => false,
                 'attr' => [
-                    'class' => 'target_tinymce',
+                    'class' => 'target_ckeditorv5',
                 ],
             ]);
     }

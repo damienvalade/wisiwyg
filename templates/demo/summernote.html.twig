@@ -6,8 +6,8 @@
 
 {% block body %}
     {{ form_start(form) }}
-        {{ form_row(form.lib) }}
         {{ form_row(form.content) }}
+    <button type="submit" class="btn btn-primary" id="validate">Send</button>
     {{ form_end(form) }}
 {% endblock %}
 
