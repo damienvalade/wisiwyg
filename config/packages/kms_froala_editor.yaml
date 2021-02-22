@@ -4,3 +4,5 @@ twig:
 
 kms_froala_editor:
     language: fr
+    includeJS: false
+    includeCSS: false

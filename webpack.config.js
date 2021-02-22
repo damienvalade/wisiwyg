@@ -25,6 +25,7 @@ Encore
     .addEntry('trumbowyg', './assets/js/trumbowyg.js')
     .addEntry('tinymce', './assets/js/tinymce.js')
     .addEntry('ckeditorv5', './assets/js/ckeditorv5.js')
+    .addEntry('froala', './assets/js/froala.js')
 
     // enables the Symfony UX Stimulus bridge (used in assets/bootstrap.js)
     //.enableStimulusBridge('./assets/controllers.json')

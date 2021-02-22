@@ -20,8 +20,8 @@
         "build": "encore production --progress"
     },
     "dependencies": {
-        "@ckeditor/ckeditor5-build-classic": "^25.0.0",
         "bootstrap": "^4.6.0",
+        "froala-editor": "^3.2.6-1",
         "jquery": "^3.5.1",
         "jquery-resizable-dom": "^0.35.0",
         "jquery-ui": "^1.12.1",
