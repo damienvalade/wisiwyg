@@ -3,3 +3,12 @@
 twig:
     form_themes:
         - '@FOSCKEditor/Form/ckeditor_widget.html.twig'
+
+fos_ck_editor:
+    configs:
+        my_config:
+            extraPlugins: "base64image"
+    plugins:
+        base64image:
+            path:     "/build/CKEditor4Base64/"
+            filename: "plugin.js"

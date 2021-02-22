@@ -80,6 +80,11 @@ Encore
         from: 'node_modules/tinymce/skins',
         to: 'skins/[path]/[name].[ext]'
     })
+
+    .copyFiles({
+        from: 'assets/CKEditor4Base64',
+        to: 'CKEditor4Base64/[path]/[name].[ext]'
+    })
 ;
 
 module.exports = Encore.getWebpackConfig();
