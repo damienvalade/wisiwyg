@@ -10,6 +10,9 @@ import "quill/dist/quill.min.js";
 import "quill/ui/icons";
 import "quill/modules/toolbar";
 
+import * as mobileView from 'quill-mobile-view';
+import 'quill-mobile-view/dist/quill-mobile-view.min.css';
+
 $('.target_quill').each(function (i, el) {
     var el = $(this), id = 'quilleditor-' + i, val = el.val(), editor_height = 200;
     var div = $('<div/>').attr('id', id).css('height', editor_height + 'px').html(val);
@@ -17,6 +20,7 @@ $('.target_quill').each(function (i, el) {
     el.parent().append(div);
 
     var toolbarOptions = [
+        mobileView.options,
         [{'font': []}, {'size': []}],
         ['bold', 'italic', 'underline', 'strike'],
         [{'color': []}, {'background': []}],
@@ -28,12 +32,16 @@ $('.target_quill').each(function (i, el) {
         ['clean']
     ];
 
-    Quill.register('modules/imageResize', ImageResize);
+    Quill.register({
+        'modules/imageResize': ImageResize,
+        'modules/quillMobileView': mobileView.module
+    });
 
     var quill = new Quill('#' + id, {
         modules: {
             toolbar: toolbarOptions,
             imageResize: {},
+            quillMobileView: {},
         },
         theme: 'snow'
     });

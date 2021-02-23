@@ -25,6 +25,9 @@ import 'trumbowyg/dist/plugins/indent/trumbowyg.indent.min.js';
 // Ajout line indent
 import 'trumbowyg/dist/plugins/lineheight/trumbowyg.lineheight.min.js';
 
+// Ajout clean paste
+import 'trumbowyg/dist/plugins/cleanpaste/trumbowyg.cleanpaste.min.js';
+
 $.trumbowyg.svgPath = icons;
 
 $('.target_wisiwyg').trumbowyg({
@@ -49,7 +52,7 @@ $('.target_wisiwyg').trumbowyg({
         resizimg: {
             minSize: 64,
             step: 16,
-        }
+        },
     }
 });
 
